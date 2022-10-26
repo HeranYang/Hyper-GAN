@@ -83,7 +83,7 @@ The structure of our data folder is:
         |       |       |       |-- TrainA\       : t1w   images
         |       |       |       |-- TrainB\       : t2w   images
         |       |       |       |-- TrainC\       : pdw   images
-        |       |-- VolumeData\      : processed 3D data in .nii.gz format
+        |       |-- VolumeData\            : processed 3D data in .nii.gz format
         |       |       |-- Valid\            : validation data set
         |       |       |       |-- ValidA\       : t1w   images
         |       |       |       |-- ValidB\       : t2w   images
@@ -100,7 +100,7 @@ The structure of our data folder is:
         |       |       |       |-- TrainB\       : t1ce  images
         |       |       |       |-- TrainC\       : t2w   images
         |       |       |       |-- TrainD\       : flair images
-        |       |-- VolumeData\      : processed 3D data in .nii.gz format
+        |       |-- VolumeData\           : processed 3D data in .nii.gz format
         |       |       |-- Valid\            : validation data set
         |       |       |       |-- ValidA\       : t1w   images
         |       |       |       |-- ValidB\       : t1ce  images
