@@ -29,7 +29,7 @@ The folder structure of our implementation is:
 
 
 ## Dataset
-
+We use the Information eXtraction from Images (IXI) and MICCAI 2019 Multimodal Brain Tumor Segmentation (BraTS 2019) datasets in our experiments.
 
 ### Data Preprocessing
 
