@@ -40,6 +40,17 @@ We use the Information eXtraction from Images (IXI) and MICCAI 2019 Multimodal B
 To reduce the time of loading data, we save the processed training data in .npy format, and save the processed validation and test data in .nii.gz format.
 
 #### IXI Dataset
+For this dataset, We conduct multiple careful data pre-processing steps for the T1w, T2w and PDw images:
+* N4 correction
+* Isotropic to 1.0mm*1.0mm*1.0mm (only for T2w)
+* Affine registration (for T1w, PDw to the T2w space)
+* N4 correction
+* White matter peak normalization of each modality to 1000
+* Pad the image volumes to 240*256*192
+* Pick boundary slice ID
+
+After preprocessing, the maximal intensities of T1w, T2w and PDw modalities are 3000, 6000 and 3000 (arbitrary units) respectively.
+
 
 
 #### BraTS 2019 Dataset
