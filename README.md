@@ -5,7 +5,7 @@ This repository is the official Tensorflow implementation of the paper "A Unifie
 ## Overview
 
 <div align=center>
-<img src="https://github.com/HeranYang/Hyper-GAN/blob/main/images/framework.png" width="700px">
+<img src="https://github.com/HeranYang/Hyper-GAN/blob/main/images/framework.png" width="700px"/>
 </div>
     
     
