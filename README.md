@@ -31,12 +31,17 @@ The folder structure of our implementation is:
 ## Dataset
 We use the Information eXtraction from Images (IXI) and MICCAI 2019 Multimodal Brain Tumor Segmentation (BraTS 2019) datasets in our experiments.
 
+* [IXI dataset](https://brain-development.org/ixi-dataset/): This dataset includes nearly 600 MR images from normal healthy subjects, which were collected at three different hospitals in London. In this experiment, we utilize all 319 subjects from Guy’s Hospital, and randomly split them into 150, 5 and 164 subjects for training, validation and test. Each subject contains three contrasts (T1w, T2w and PDw), and only one of three contrasts per subject is used for training to generate unpaired data.
+
+* [BraTS 2019 dataset](https://www.med.upenn.edu/cbica/brats-2019/): This dataset includes 335 training subjects and 125 validation subjects, which were acquired with different clinical protocols and various scanners from multiple (n=19) institutions. In our experiments, we use all 150 subjects from CBICA institution, and randomly split them into 100, 5 and 45 subjects for training, validation and test. Each subject contains four contrasts (T1w, T1Gd, T2w, FLAIR), and only one of four contrasts per subject is used for training.
+
 ### Data Preprocessing
 
 #### IXI Dataset
 
 
 #### BraTS 2019 Dataset
+
 
 
 ### Data Folder Structure
