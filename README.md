@@ -4,7 +4,7 @@ This repository is the official Tensorflow implementation of the paper "A Unifie
 
 ## Overview
 
-![Image text](https://github.com/HeranYang/Hyper-GAN/blob/main/images/framework.png)
+<img src="https://github.com/HeranYang/Hyper-GAN/blob/main/images/framework.png" width="500px"
 
 We propose a unified Hyper-GAN model for effectively and efficiently translating between different contrast pairs. Hyper-GAN consists of a pair of hyper-encoder and hyper-decoder to first map from the source contrast to a common feature space, and then further map to the target contrast image. To facilitate the translation between different contrast pairs, contrast-modulators are designed to tune the hyper-encoder and hyper-decoder adaptive to different contrasts. We also design a common
 space loss to enforce that multi-contrast images of a subject share a common feature space, implicitly modeling the shared underlying anatomical structures. Experiments on two datasets of IXI and BraTS 2019 show that our Hyper-GAN achieves state-of-the-art results in both accuracy and efficiency, e.g., improving more than 1.47 and 1.09 dB in PSNR on two datasets with less than half the amount of parameters.
