@@ -42,11 +42,11 @@ To reduce the time of loading data, we save the processed training data in .npy 
 #### IXI Dataset
 For this dataset, We conduct multiple careful data pre-processing steps for the T1w, T2w and PDw images:
 * N4 correction
-* Isotropic to 1.0mm * 1.0mm * 1.0mm (only for T2w)
+* Isotropic to 1.0mmx1.0mmx1.0mm (only for T2w)
 * Affine registration (for T1w, PDw to the T2w space)
 * N4 correction
 * White matter peak normalization of each modality to 1000
-* Pad the image volumes to 240 * 256 * 192
+* Pad the image volumes to 240x256x192
 * Pick boundary slice ID
 
 After preprocessing, the maximal intensities of T1w, T2w and PDw modalities are 3000, 6000 and 3000 (arbitrary units) respectively.
@@ -59,7 +59,7 @@ Additionally, we conduct several extra pre-processing steps:
 * N4 correction
 * White matter peak normalization of each modality to 1000
 * Pick boundary slice ID
-* Pad the 2D sagittal images to 240 * 160
+* Pad the 2D sagittal images to 240x160
 
 After preprocessing, the maximal intensities of T1w, T1ce, T2w and Flair modalities are 3000, 5000, 6000 and 7000 (arbitrary units) respectively.
 
