@@ -10,9 +10,6 @@ space loss to enforce that multi-contrast images of a subject share a common fea
 ![Image text](https://github.com/HeranYang/Hyper-GAN/blob/main/images/framework.png)
 
 
-![Image text](https://github.com/HeranYang/Hyper-GAN/blob/main/images/architecture.png)
-
-
 
 The outline of this readme file is:
 
