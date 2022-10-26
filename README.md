@@ -42,7 +42,7 @@ To reduce the time of loading data, we save the processed training data in .npy 
 #### IXI Dataset
 For this dataset, We conduct multiple careful data pre-processing steps for the T1w, T2w and PDw images:
 * N4 correction
-* Isotropic to 1.0mmx1.0mmx1.0mm (only for T2w)
+* Isotropic to 1.0mm^3 (only for T2w)
 * Affine registration (for T1w, PDw to the T2w space)
 * N4 correction
 * White matter peak normalization of each modality to 1000
