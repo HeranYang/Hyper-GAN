@@ -126,6 +126,12 @@ The structure of our data folder is:
 
 
 
+## Usage
+
+### Training
+
+### Test
+
 
 
 ## Citation
@@ -135,8 +141,7 @@ If you use this code for your research, please cite our paper:
 > <br> author={Yang, Heran and Sun, Jian and Yang, Liwei and Xu, Zongben},
 > <br> booktitle={MICCAI},
 > <br> pages={127--137},
-> <br> year={2021}
-> <br> }
+> <br> year={2021}}
 
 
 ## Reference
