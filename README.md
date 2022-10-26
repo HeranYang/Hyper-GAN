@@ -23,7 +23,12 @@ The folder structure of our implementation is:
 
 
 ## Requirements
-
+All experiments utilize the TensorFlow library. We recommend the following package versions:
+* python == 3.6
+* tensorflow-gpu == 1.10.0
+* numpy == 1.19.2
+* imageio == 2.9.0
+* nibabel == 3.2.1
 
 
 
@@ -71,30 +76,41 @@ After preprocessing, the maximal intensities of T1w, T1ce, T2w and Flair modalit
 The structure of our data folder is:
 
     data\    : root data folder  
-        |-- IXI-Dataset\        : processed IXI data folder
-        |       |-- SlicedData\      : processed 2D data in .npy format
-        |       |       |-- Train\       : training data set
+        |-- IXI-Dataset\     : processed IXI data folder
+        |       |-- IXI-dataInfo.txt       : save the boundary slice id
+        |       |-- SlicedData\            : processed 2D data in .npy format
+        |       |       |-- Train\            : training data set
         |       |       |       |-- TrainA\       : t1w   images
         |       |       |       |-- TrainB\       : t2w   images
         |       |       |       |-- TrainC\       : pdw   images
         |       |-- VolumeData\      : processed 3D data in .nii.gz format
-        |       |       |-- Valid\         : validation data set
+        |       |       |-- Valid\            : validation data set
         |       |       |       |-- ValidA\       : t1w   images
         |       |       |       |-- ValidB\       : t2w   images
         |       |       |       |-- ValidC\       : pdw   images
-        |       |       |-- Test\          : test data set
+        |       |       |-- Test\             : test data set
         |       |       |       |-- TestA\        : t1w   images
         |       |       |       |-- TestB\        : t2w   images
         |       |       |       |-- TestC\        : pdw   images
-        |-- BraTS-Dataset\      : processed BraTS 2019 data folder
-        |       |-- SlicedData\      : processed 2D data in .npy format
-        |       |       |-- Train\       : training data set
+        |-- BraTS-Dataset\    : processed BraTS 2019 data folder
+        |       |-- BraTS-dataInfo.txt    : save the boundary slice id
+        |       |-- SlicedData\           : processed 2D data in .npy format
+        |       |       |-- Train\            : training data set
         |       |       |       |-- TrainA\       : t1w   images
+        |       |       |       |-- TrainB\       : t1ce  images
+        |       |       |       |-- TrainC\       : t2w   images
+        |       |       |       |-- TrainD\       : flair images
         |       |-- VolumeData\      : processed 3D data in .nii.gz format
-        |       |       |-- Valid\         : validation data set
+        |       |       |-- Valid\            : validation data set
         |       |       |       |-- ValidA\       : t1w   images
-        |       |       |-- Test\          : test data set
+        |       |       |       |-- ValidB\       : t1ce  images
+        |       |       |       |-- ValidC\       : t2w   images
+        |       |       |       |-- ValidD\       : flair images
+        |       |       |-- Test\             : test data set
         |       |       |       |-- TestA\        : t1w   images
+        |       |       |       |-- TestB\        : t1ce  images
+        |       |       |       |-- TestC\        : t2w   images
+        |       |       |       |-- TestD\        : flair images
 
 
 
