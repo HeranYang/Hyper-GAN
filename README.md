@@ -41,6 +41,13 @@ We use the Information eXtraction from Images (IXI) and MICCAI 2019 Multimodal B
 
 
 #### BraTS 2019 Dataset
+The data has been pre-processed by organizers, i.e., co-registered to the same anatomical template, interpolated to the same resolution and skull-stripped.
+Additionally, we conduct several extra pre-processing steps:
+* N4 correction
+* White matter peak normalization of each modality to 1000
+* Cutting out the black background area outside the brain
+After preprocessing, the maximal intensities of T1w, T1ce, T2w and Flair modalities are 3000, 5000, 6000 and 7000 (arbitrary units) respectively.
+To reduce the time of loading data, we save the processed training data in .npy format, and save the processed validation and test data in .nii.gz format.
 
 
 
