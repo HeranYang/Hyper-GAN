@@ -21,8 +21,8 @@ The outline of this readme file is:
     Overview
     Requirements
     Dataset
+    Usage
     Citation
-    Reference
     
 The folder structure of our implementation is:
 
@@ -150,6 +150,12 @@ The structure of our code folder is:
 
 ### Training
 
+After setting the phase in main.py as "train", our code can be trained using the following commond:
+
+    python main.py
+
+If you want to continue train the model, you could uncommond the continue_training codes in train function in model.py, and then run the commond above.
+
 ### Validation
 
 ### Test
@@ -166,4 +172,3 @@ If you use this code for your research, please cite our paper:
 > <br> year={2021}}
 
 
-## Reference
