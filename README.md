@@ -67,6 +67,8 @@ For this dataset, We conduct multiple careful data pre-processing steps for the 
 * Pick boundary slice ID
 
 After preprocessing, the maximal intensities of T1w, T2w and PDw modalities are 3000, 6000 and 3000 (arbitrary units) respectively.
+For the training subset, the intensities are further linearly scaled to [0, 1], and then the processed 2d training images are saved in .npy format.
+(The linear scaling for validation and test subsets is included in our codes within utils.py.)
 
 
 
@@ -79,6 +81,8 @@ Additionally, we conduct several extra pre-processing steps:
 * Pad the 2D sagittal images to 240x160
 
 After preprocessing, the maximal intensities of T1w, T1ce, T2w and Flair modalities are 3000, 5000, 6000 and 7000 (arbitrary units) respectively.
+For the training subset, the intensities are further linearly scaled to [0, 1], and then the processed 2d training images are saved in .npy format.
+(The linear scaling for validation and test subsets is included in our codes within utils.py.)
 
 
 
@@ -128,7 +132,25 @@ The structure of our data folder is:
 
 ## Usage
 
+The structure of our code folder is:
+
+    ours_model_fs\       : code of Hyper-GAN using filter scaling strategy
+           |-- main.py         : main function
+           |-- model.py        : code of building model, and train/valid/test
+           |-- module.py       : code of defining networks
+           |-- ops.py          : code of defining basic components
+           |-- utils.py        : code of loading train and test data
+    ours_model_cin\      : code of Hyper-GAN using conditional instance normalization strategy
+           |-- main.py         : main function
+           |-- model.py        : code of building model, and train/valid/test
+           |-- module.py       : code of defining networks
+           |-- ops.py          : code of defining basic components
+           |-- utils.py        : code of loading train and test data
+
+
 ### Training
+
+### Validation
 
 ### Test
 
