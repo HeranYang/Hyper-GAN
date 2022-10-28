@@ -148,6 +148,7 @@ The structure of our code folder is:
            |-- utils.py        : code of loading train and test data
 
 
+
 ### Training
 
 After setting the phase in main.py as "train", our code can be trained using the following commond:
