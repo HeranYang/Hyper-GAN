@@ -46,7 +46,7 @@ All experiments utilize the TensorFlow library. We recommend the following packa
 
 
 ## Dataset
-We use the Information eXtraction from Images (IXI) and MICCAI 2019 Multimodal Brain Tumor Segmentation (BraTS 2019) datasets in our experiments.
+We use the Information eXtraction from Images (IXI) dataset and MICCAI 2019 Multimodal Brain Tumor Segmentation (BraTS 2019) dataset in our experiments.
 
 * [IXI dataset](https://brain-development.org/ixi-dataset/): This dataset includes nearly 600 MR images from normal healthy subjects, which were collected at three different hospitals in London. In this experiment, we utilize all 319 subjects from Guy’s Hospital, and randomly split them into 150, 5 and 164 subjects for training, validation and test. Each subject contains three contrasts (T1w, T2w and PDw), and only one of three contrasts per subject is used for training to generate unpaired data.
 
