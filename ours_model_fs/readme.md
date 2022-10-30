@@ -39,7 +39,7 @@ Then, you can generate the test results using the following commond:
 
 
 ## Citation
-If you use this code for your research, please cite our paper:
+If you find this code useful for your research, please cite our paper:
 > @inproceedings{yang2021unified,
 > <br> title={A Unified Hyper-GAN Model for Unpaired Multi-contrast MR Image Translation},
 > <br> author={Yang, Heran and Sun, Jian and Yang, Liwei and Xu, Zongben},
