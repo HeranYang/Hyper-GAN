@@ -101,4 +101,6 @@ The structure of our data folder is:
         |       |       |       |       |-- DomD{:0>3d}.nii.gz                 : image name format
 
 
-About dataInfo.txt file: 
+#### About dataInfo.txt File
+
+As our experiments are performed on 2d sagittal slices, we utilize a dataInfo.txt file to save the index range of sagittal slices containing foreground (i.e., brain in our datasets), and the training processes are only conducted over these slices containing foreground.
