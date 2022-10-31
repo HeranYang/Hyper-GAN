@@ -1,3 +1,5 @@
+## Usage
+
 This folder contains the code of Hyper-GAN using filter scaling strategy. The structure of this folder is:
 
     ours_model_fs\       : code of Hyper-GAN using filter scaling strategy
