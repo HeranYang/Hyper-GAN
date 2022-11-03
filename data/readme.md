@@ -1,6 +1,6 @@
 ## Dataset
 
-This folder is the root data folder containing processed dataset, which needs to be downloaded and processed by users. 
+This folder is the root data folder containing processed dataset, which needs to be downloaded and processed by the users. 
 
 
 
@@ -101,6 +101,8 @@ The structure of our data folder is:
         |       |       |       |       |-- DomD{:0>3d}.nii.gz                 : image name format
 
 
+
+
 #### About dataInfo.txt File
 
 As our experiments are performed on 2d sagittal slices, we utilize a dataInfo.txt file to save the index range of sagittal slices containing foreground (i.e., brain in our datasets), and the training processes are only conducted over these slices containing foreground.
@@ -108,3 +110,14 @@ As our experiments are performed on 2d sagittal slices, we utilize a dataInfo.tx
 Each row in the dataInfo.txt file corresponds to one subject. Take the first row for example:
 
     1 240 134 134 53 186
+
+From left to right, each number represents:
+
+    1:    the subject id
+    240:  the total number of sagittal slices
+    134:  the total number of sagittal slices containing foreground
+    134:  the final number of sagittal slices containing foreground
+    53:   the index of first sagittal slice containing foreground
+    186:  the index of last sagittal slice containing foreground
+    
+The users could produce your own dataInfo.txt file based on your preprocessed dataset.
