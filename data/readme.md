@@ -104,3 +104,7 @@ The structure of our data folder is:
 #### About dataInfo.txt File
 
 As our experiments are performed on 2d sagittal slices, we utilize a dataInfo.txt file to save the index range of sagittal slices containing foreground (i.e., brain in our datasets), and the training processes are only conducted over these slices containing foreground.
+
+Each row in the dataInfo.txt file corresponds to one subject. Take the first row for example:
+
+    1 240 134 134 53 186
