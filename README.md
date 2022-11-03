@@ -178,7 +178,7 @@ Our code can be trained using the following commond:
 
     python main.py --phase=train
 
-If you want to continue train the model, you could uncommond the continue_training codes in train function within model.py, and then run the commond above.
+If you want to continue train the model, you could uncomment the continue_training codes in train function within model.py, and then run the commond above.
 
 
 ### Validation
