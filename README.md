@@ -199,6 +199,15 @@ Then, you can generate the test results using the following commond:
     python main.py --phase=test
 
 
+#### About Trained Model
+
+We also upload our trained Hyper-GAN models on BraTS 2019 dataset, and one can to directly use them for MR image synthesis.
+Due to the restrictions of upload size of github, the models are uploaded to 
+the [Google Drive](https://drive.google.com/drive/folders/1phlXLZBMaWr6UcWACppv1fvTkOTqfFXK?usp=share_link) 
+and [CowTransfer]().
+
+
+
 
 ## Citation
 If you find this code useful for your research, please cite our paper:
