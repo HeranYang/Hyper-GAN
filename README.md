@@ -153,7 +153,7 @@ The structure of our data folder is:
 
 ## Usage
 
-We provide our Hyper-GAN codes on BraTS 2019 dataset, and you can extend to your own dataset by simply modifying the configs in main.py, the dataset path in model.py, and the intensity ranges in utils.py.
+We provide our Hyper-GAN codes on BraTS 2019 dataset, and you can extend to your own dataset by modifying the configs in main.py, the dataset path in model.py, and the intensity ranges in utils.py, etc.
 
 The structure of our code folder is:
 
