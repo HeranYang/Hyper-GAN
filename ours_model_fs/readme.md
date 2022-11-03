@@ -38,6 +38,15 @@ Then, you can generate the test results using the following commond:
 
 
 
+#### About Trained Model
+
+We have uploaded our trained Hyper-GAN models on BraTS 2019 dataset, and one can directly use them for multi-contrast MR image synthesis.
+Due to the size restriction of upload files in github, the models are uploaded to 
+the [Google Drive](https://drive.google.com/drive/folders/1phlXLZBMaWr6UcWACppv1fvTkOTqfFXK?usp=share_link) 
+and [Baidu Netdisk](https://pan.baidu.com/s/1PeHPjrhDsPUcvXncR1JftA?pwd=ffr4).
+
+
+
 ## Citation
 If you find this code useful for your research, please cite our paper:
 > @inproceedings{yang2021unified,
